@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bounching-ball</title>
+
+    <style>
+
+        *{margin: 0; padding: 0;}
+
+        body{
+            background-color: black;
+        }
+
+        div{
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+        div ul{
+            display: flex; border-bottom: 5px solid bisque;
+        }
+        div ul li{
+            width: 50px;
+            height: 50px;
+            background-color: blue;
+            list-style: none;
+            margin: 0 10px;
+            border-radius: 50%;
+            animation: bouncy 3s linear infinite;
+
+
+
+        }
+
+        @keyframes bouncy{
+            0%{ transform: translateY(0);}
+            50%{transform: translateY(-120px);}
+
+            100%{transform: translateY(0);}
+
+        }
+
+        ul li:nth-child(1){
+            animation-delay: 0.2s;
+            background-color: blanchedalmond;
+
+        }
+        ul li:nth-child(2){
+            animation-delay: 0.4s;
+            background-color:brown;
+
+        }
+        ul li:nth-child(3){
+            animation-delay: 0.6s;
+            background-color:cornflowerblue;
+
+        }
+        ul li:nth-child(4){
+            animation-delay: 0.8s;
+            background-color:darkblue;
+
+        }
+        ul li:nth-child(5){
+            animation-delay: 0.10s;
+            background-color:ghostwhite;
+
+        }
+        ul li:nth-child(6){
+            animation-delay: 0.12s;
+            background-color:green;
+
+        }
+        ul li:nth-child(7){
+            animation-delay: 0.14s;
+            background-color:rgb(205, 223, 205);
+
+        }
+        ul li:nth-child(8){
+            animation-delay: 0.17s;
+            background-color:rgba(25, 206, 94, 0.411);
+
+        }
+
+    </style>
+</head>
+<body>
+    <div>
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+
+        </ul>
+    </div>
+    
+</body>
+</html>
